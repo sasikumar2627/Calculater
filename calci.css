@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: inset;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+    color:rgb(44, 44, 49);
+    background-color: rgb(180, 156, 156);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 2px rgb(145, 145, 151);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    position:absolute;
+    left: 43%;
+    top:10%;
+    border-style: set;
+    transition: 0.2s all linear; 
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius:10%;
+    background: rgb(95, 86, 86);
+    box-shadow: 2px 6px 8px black;
+    margin-top : 25px;
+    border-radius: 20px 20px 20px 20px;
+}
+#result{
+    background-color:rgb(214, 192, 192);
+    border-bottom-color: black;
+    border-right-color: rgb(82, 52, 52);
+    color:rgb(46, 34, 34);
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 5px;
+    height: 30px;
+    width:410px;
+    border-style: inset;
+    padding: 30px;
+    font-size: 25px;
+}
+
+.buttons{
+    display:flex;
+    border-style: inset;
+    border-right-color: rgb(130, 130, 156);
+    border-bottom-color: rgb(138, 138, 182);
+    flex-direction: column;
+    gap: 0.2px;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.2px;
+}
+.row button{
+    width: 100px;
+    height: 50px;
+    cursor:pointer;
+    border-radius: 8px 8px 10px;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s all linear; 
+} 
+.row button:hover{
+    background-color: #6b6060;
+}
+.row button:active{
+    background-color: #a6dba6;
+}
+#dot{
+    font-weight: 600;
+}
+#clear,#delete,#addition,#square,#log,#mdivision,#division,#multiplication,#subtraction,#dot,#equal,#sqrt {
+    background-color:rgb(165, 165, 177);
+}
+#on,#off{
+    background-color: rgb(143, 63, 77);
+}

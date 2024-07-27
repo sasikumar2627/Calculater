@@ -1,0 +1,58 @@
+<html>
+    <head>
+    <title>Calculator</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calci.css">
+    </head>
+    <body>
+        <span class="heading">
+            <h1 class="text-center">Calculator</h1>
+        </span>        
+        <div class="container">
+            <div class="result">
+                <input type="text" id="result">
+            </div>
+            <div class="buttons">
+                <div class="row">
+                    <button id="clear" onclick="allclr()">C</button>
+                    <button id="delete" onclick="clr()">⌫</button>
+                    <button id="on" onclick="on()">On</button>
+                    <button id="off" onclick="off()">Off</button>
+                </div>
+                <div class="row">
+                    <button onclick="dis('7')">7</button>
+                    <button onclick="dis('8')">8</button>
+                    <button onclick="dis('9')">9</button>
+                    <button id="addition" onclick="dis('+')">+</button>
+                </div>
+                <div class="row">
+                    <button onclick="dis('4')">4</button>
+                    <button onclick="dis('5')">5</button>
+                    <button onclick="dis('6')">6</button>
+                    <button id="division" onclick="dis('/')">/</button>
+                </div>
+                <div class="row">
+                    <button onclick="dis('1')">1</button>
+                    <button onclick="dis('2')">2</button>
+                    <button onclick="dis('3')">3</button>
+                    <button id="multiplication" onclick="dis('*')">*</button>
+                </div>
+                <div class="row">
+                    <button id="dot" onclick="dis('.')">.</button>
+                    <button id="zero" onclick="dis('0')">0</button>
+                    <button id="mdivision" onclick="dis('%')">%</button>
+                    <button id="subtraction" onclick="dis('-')">-</button>
+                </div>
+                <div class="row">
+                    <button id="Log" onclick="log()">log</button>
+                    <button id="sqrt" onclick="sqrt()">√</button>
+                    <button id="square" onclick="sqr()">x²</button>
+                    <button id="equal" onclick="solve()">=</button>
+                </div>
+            </div>
+        </div>
+        <script src="calci.js"></script>
+    </body>
+</html>
